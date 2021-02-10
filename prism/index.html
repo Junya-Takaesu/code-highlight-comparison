@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./prism.css">
+</head>
+<body>
+  <h1>Testing prism</h1>
+
+  <a href="../highlight-js/index.html">See how codes are rendered using "highlight.js"</a>
+
+  <h2>Ruby</h2>
+  <pre>
+    <code class="language-ruby">
+      variable = "test"
+      if variable
+        # This will put the content of variable
+        puts variable
+        result = 1 + 3
+        puts result
+      end
+    </code>
+  </pre>
+
+  <h2>PHP</h2>
+  <pre>
+    <code class="language-php">
+      &#x3C;?php
+        $test = "hello world";
+        echo $test;
+        $SomeObject = new SomeObject();
+      ?&#x3E;
+    </code>
+  </pre>
+
+  <h2>HTML</h2>
+  <pre>
+    <code class="language-html">
+      &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/path/to/styles/default.css&#x22;&#x3E;
+      &#x3C;script src=&#x22;/path/to/highlight.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+      &#x3C;script&#x3E;hljs.initHighlightingOnLoad();&#x3C;/script&#x3E;
+    </code>
+  </pre>
+
+  <h2>Summary</h2>
+  <p>
+    <ul>
+      <li>Download two files to use Prism: prizm.js and prisim.css.<br>These files can be downloaded from the link below.</li>
+      <ul>
+        <li><a target="_blank" href="https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+erb+markup-templating+php+ruby+sql+yaml">https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+erb+markup-templating+php+ruby+sql+yaml</a></li>
+        <li>The download url is customized for the languages I picked which are banch of markup languages, css, C-like, php, ruby and sql.</li>
+        <li>So, you can download the library customized just for me, or just customize for yourself by checking the checkboxes in the download page.</li>
+      </ul>
+      <li>And then, you just need to include the js and css to the page which containes codes you want to highlight.</li>
+      <li>You can see how it's doen by seeing the source codes of this html page.(Simply, use <code class="language-html">&#x3C;link&#x3E;</code> for the css, <code class="language-html">&#x3C;script&#x3E;</code> for the js</li>
+    </ul>
+  </p>
+
+
+  <script src="./prism.js"></script>
+</body>
+</html>
